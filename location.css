@@ -10,7 +10,7 @@ body {
 }
 
 .map {
-  width: 375px;
+  width: 100vw;
   height: 800px;
 }
 .button {
@@ -112,12 +112,6 @@ h5 {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .map {
-    display: none;
-  }
-  .map-tablet {
-    display: unset;
-  }
   .header-two {
     display: flex;
     flex-direction: row;
@@ -135,10 +129,18 @@ h5 {
 }
 @media screen and (min-width: 1440px) {
   .map-tablet {
+    display:none;
+  }
+  .map{
     display: none;
   }
   .map-desktop {
-    display: unset;
+    display:block;
+    width:100vw;
+    overflow:hidden;
+  }
+  body{
+    overflow-x:hidden;
   }
   h1 {
     font-size: 70px;
